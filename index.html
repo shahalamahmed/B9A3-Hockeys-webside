@@ -1,46 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-        <!-- tailwind and daisyui -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- manrope google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-        <!-- tailwind custom color -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            clifford: '#da373d',
-                        }
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
                     }
                 }
             }
-        </script>
-        <script src="https://kit.fontawesome.com/8cdb54e0c4.js" crossorigin="anonymous"></script>
-    
-        <style>
-            .font-manrope {
-                font-family: 'Manrope', sans-serif;
-            }
-        </style>
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/8cdb54e0c4.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
+    <header class="container mx-auto">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 mt-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-4xl font-extrabold">Hockey’s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal gap-10 px-1">
+                    <li class="font-bold text-[#FF4240]">Home</li>
+                    <li>About</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-primary">Get Ticket</a>
+            </div>
+        </div>
+        <!-- banner -->
+        <section class="mx-auto">
+            <div class="rounded-lg mt-14">
+                <img class="lg:w-[1250px]" src="B9A3-Hockeys-main/Images/1.png" alt="">
+            </div>
+        </section>
     </header>
-    <main>
+    <main class="container mx-auto">
+        <!-- club section -->
+        <section>
+            <h2 class="text-center text-4xl text-[#131318] font-extrabold mb-6 mt-6 lg:mt-20">Professional Hockeys Club
+            </h2>
+            <p class="text-[#0d0d1299] font-medium text-center">Dit amet consectetur. Condimentum dignissim adipiscing
+                aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+            <!-- card 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-10">
+                <div class="card">
+                    <figure>
+                        <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-center text-xl font-semibold">Prayer Facility</h2>
+                        <p class="text-[#0d0d1299]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <figure>
+                        <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-center text-xl font-semibold">Experienced Coach</h2>
+                        <p class="text-[#0d0d1299]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <figure>
+                        <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-center text-xl font-semibold">Senior Player</h2>
+                        <p class="text-[#0d0d1299]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <figure>
+                        <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-center text-xl font-semibold">Training Ground</h2>
+                        <p class="text-[#0d0d1299]">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <!-- program section -->
+        <section>
+            <h2 class="text-center text-4xl font-extrabold">Program Sections</h2>
+            <p class=" text-[#0d0d1299] text-center font-medium ">Dit amet consectetur. Condimentum dignissim adipiscing
+                aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="card rounded-lg shadow-xl image-full">
+                    <img src="B9A3-Hockeys-main/Images/2.png" alt="Shoes" />
+                    <div class="card-body">
+                        <h2 class="card-title text-white text-3xl font-extrabold">Junior Program</h2>
+                        <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-lg shadow-xl image-full">
+                    <figure><img src="B9A3-Hockeys-main/Images/3.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-white text-3xl font-extrabold">Teenager Program</h2>
+                        <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card rounded-lg shadow-xl image-full">
+                    <img src="B9A3-Hockeys-main/Images/4.png" alt="" />
+                    <div class="card-body">
+                        <h2 class="card-title text-white text-3xl font-extrabold">Professional Program</h2>
+                        <p class="font-medium">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="">
+                            <button class="btn btn-primary">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- new products -->
+        <section>
+           <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="hero">
+                <!-- card 1 -->
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>
+              </div> 
+              <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>
+                <!-- card 4 -->
+              </div> <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>  
+              </div> 
+              <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>
+              </div> 
+              <div class="hero">
+                <div class="hero-content flex-col lg:flex-row">
+                  <img src="B9A3-Hockeys-main/Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div class="pt-6">
+                    <p class="font-medium text-[#0d0d1299] text-xl "><span class=""><i class="fa-solid fa-star text-yellow-400"></i> 5.0 </span> <span class="pl-4"><i class="fa-light fa-eye text-yellow-300"></i> 20 </span> <span class="pl-3"><i class="fa-regular fa-heart"></i> 200 </span></p>
+                    <h1 class="text-xl font-extrabold text-[#131318]">World Cup Flags Football</h1>
+                    <p class="text-[#0d0d1299] py-6">Dolor sit amet consectetur. Ut urna diam<br> quis sagittis. </p>
+                     <p><span class="text-[#FF4240] font-extrabold text-xl ">Price - $22.00</span> <span class="text-[#131318] font-medium pl-6"> <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free</span></p>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
+
 </html>
